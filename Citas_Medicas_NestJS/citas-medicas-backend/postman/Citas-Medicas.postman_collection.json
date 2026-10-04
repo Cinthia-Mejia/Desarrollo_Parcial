@@ -1,0 +1,329 @@
+{
+  "info": {
+    "name": "Citas Médicas - NestJS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ],
+  "item": [
+    {
+      "name": "POST /medicos",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicos",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombres\": \"Ana\",\n  \"apellidos\": \"López\",\n  \"fechaNacimiento\": \"1990-05-15\",\n  \"sexo\": \"F\",\n  \"carnet\": \"MED001\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /medicos",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicos"
+      }
+    },
+    {
+      "name": "GET /medicos/MED001",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicos/MED001"
+      }
+    },
+    {
+      "name": "PUT /medicos/MED001",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicos/MED001",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombres\": \"Ana\",\n  \"apellidos\": \"López\",\n  \"fechaNacimiento\": \"1990-05-15\",\n  \"sexo\": \"F\",\n  \"carnet\": \"MED001\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /medicos/MED001",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicos/MED001",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sexo\": \"M\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DELETE /medicos/MED001",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicos/MED001"
+      }
+    },
+    {
+      "name": "POST /medicamentos",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicamentos",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Paracetamol\",\n  \"descripcion\": \"Tabletas de 500 mg\",\n  \"cantidad\": 50\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /medicamentos",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicamentos"
+      }
+    },
+    {
+      "name": "GET /medicamentos/1",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicamentos/1"
+      }
+    },
+    {
+      "name": "PUT /medicamentos/1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicamentos/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Paracetamol\",\n  \"descripcion\": \"Tabletas de 500 mg\",\n  \"cantidad\": 50\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /medicamentos/1",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicamentos/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cantidad\": 20\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DELETE /medicamentos/1",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/medicamentos/1"
+      }
+    },
+    {
+      "name": "POST /citas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/citas",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fecha\": \"2026-10-10\",\n  \"hora\": \"09:30\",\n  \"medico\": \"MED001\",\n  \"descripcion\": \"Consulta general\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /citas",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/citas"
+      }
+    },
+    {
+      "name": "GET /citas/1",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/citas/1"
+      }
+    },
+    {
+      "name": "PUT /citas/1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/citas/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fecha\": \"2026-10-10\",\n  \"hora\": \"09:30\",\n  \"medico\": \"MED001\",\n  \"descripcion\": \"Consulta general\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /citas/1",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/citas/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"descripcion\": \"Control médico\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DELETE /citas/1",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/citas/1"
+      }
+    }
+  ]
+}
